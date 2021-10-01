@@ -8,17 +8,17 @@
 }
 
 div#cont {
-	width: 560px;
+	width: 488px;
 	margin: 50px auto;
 }
 
 div#header {
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 div#vizCont {
-	margin-left: 40px;
+	margin-left: 0px;
 }
 
 h1 {
