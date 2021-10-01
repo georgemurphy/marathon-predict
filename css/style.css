@@ -10,7 +10,15 @@
 div#cont {
 	width: 560px;
 	margin: 40px auto;
-	padding: 0px 40px 50px 40px;
+}
+
+div#header {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+div#vizCont {
+	margin-left: 40px;
 }
 
 h1 {
