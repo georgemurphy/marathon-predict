@@ -3,4 +3,80 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	font-family: sans-serif;
+	cursor: default;
+}
+
+div#cont {
+	width: 480px;
+	margin: 40px auto;
+}
+
+h1 {
+	font-size: 32px;
+    line-height: 1.1;
+	fill: #333;
+}
+
+h2 {
+	margin: 8px 0 20px 0;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.3;
+	fill: #333;
+}
+
+div.timeGroup {
+	display: flex;
+}
+
+div.timeGroup p {
+	margin-right: 10px;
+}
+
+line.histBaseline {
+	stroke: #888;
+	stroke-width: 2px;
+}
+
+text.baselineLabels,
+text.subTitle,
+text.paceDiffTextSub {
+	text-transform: lowercase;
+	font-weight: 300;
+	fill: #888;
+	font-size: 10px;
+}
+
+text.paceDiffTextSub {
+	font-size: 9px;
+}
+
+text.paceTitle {
+	font-weight: 600;
+	font-size: 20px;
+	fill: #333;
+}
+
+text.paceDiffText {
+	font-weight: 600;
+	font-size: 12px;
+}
+
+text.secondary {
+	font-weight: 600;
+	font-size: 11px;
+}
+
+text.secondarySub {
+	font-size: 8px;
+}
+
+line.pole {
+	stroke: #333;
+	stroke-width: 1px;
+}
+
+g.poles {
+	opacity: 0;
 }
