@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 
 		hists = bronxTimeGroups.append('svg')
-			.attr('width', '600px')
+			.attr('width', '488px')
 			.attr('height', '114px')
 			.on('mouseover', function(){
 				d3.selectAll('g.poles').style('opacity', 0);

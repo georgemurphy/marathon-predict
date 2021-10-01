@@ -8,8 +8,10 @@
 }
 
 div#cont {
-	width: 488px;
+	width: 528px;
 	margin: 50px auto;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 div#header {
@@ -36,7 +38,7 @@ h2 {
 }
 
 div.timeGroup {
-	display: flex;
+	/*display: flex;*/
 }
 
 div.timeGroup p {
