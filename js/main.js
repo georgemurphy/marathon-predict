@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		hists.append('line')
 			.attr('class', 'histBaseline')
 			.attr('x1', histX(-240))
-			.attr('x2', histX(240))
+			.attr('x2', histX(240) + 8)
 			.attr('y1', 100)
 			.attr('y2', 100);
 

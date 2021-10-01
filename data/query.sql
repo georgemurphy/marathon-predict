@@ -4,7 +4,8 @@ SELECT  bronx.runnerId,
         cast(left(bronx.pace, 2) as integer) * 60 + cast(right(bronx.pace,2) as integer) as bronx_pace_sec,
         cast(left(marathon.pace, 2) as integer) * 60 + cast(right(marathon.pace,2) as integer) as marathon_pace_sec,
         (cast(left(bronx.pace, 2) as integer) * 60 + cast(right(bronx.pace,2) as integer)) - (cast(left(marathon.pace, 2) as integer) * 60 + cast(right(marathon.pace,2) as integer)) as pace_diff,
-        CASE WHEN ABS(ceiling(((cast(left(bronx.pace, 2) as integer) * 60 + cast(right(bronx.pace,2) as integer)) - (cast(left(marathon.pace, 2) as integer) * 60 + cast(right(marathon.pace,2) as integer))) * 0.1) * 10) > 240 THEN 240 
+        CASE WHEN ceiling(((cast(left(bronx.pace, 2) as integer) * 60 + cast(right(bronx.pace,2) as integer)) - (cast(left(marathon.pace, 2) as integer) * 60 + cast(right(marathon.pace,2) as integer))) * 0.1) * 10 < -240 THEN -240 
+              WHEN ceiling(((cast(left(bronx.pace, 2) as integer) * 60 + cast(right(bronx.pace,2) as integer)) - (cast(left(marathon.pace, 2) as integer) * 60 + cast(right(marathon.pace,2) as integer))) * 0.1) * 10 > 240 THEN -240 
         ELSE ceiling(((cast(left(bronx.pace, 2) as integer) * 60 + cast(right(bronx.pace,2) as integer)) - (cast(left(marathon.pace, 2) as integer) * 60 + cast(right(marathon.pace,2) as integer))) * 0.1) * 10
         END as pace_diff_bkt,
         marathon.overallTime as marathon_time
