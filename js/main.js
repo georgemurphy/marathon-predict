@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
 		histX = d3.scaleLinear()
 			.domain([-240,240])
 			.range([0,480])
-			.clamp(true);
+			// .clamp(true);
 
 		histY = d3.scaleLinear()
 			.domain([0,100]) // to be reset for each small multiple
@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				{label: 'faster >', time: 10, textanchor: 'start'},
 				// {label: '1min', time: 60},
 				{label: '-2min', time: 120, textanchor: 'middle'},
-				{label: '-4min', time: 240, textanchor: 'end'}
+				{label: '-4min', time: 247, textanchor: 'end'}
 				])
 			.enter()
 			.append('text')
