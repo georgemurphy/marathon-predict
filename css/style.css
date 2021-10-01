@@ -37,8 +37,18 @@ h2 {
 	fill: #333;
 }
 
+div#footer h2 {
+	font-size: 12px;
+}
+
+a:link, a:visited {
+	color: #333;
+	cursor: pointer;
+}
+
 div.timeGroup {
 	/*display: flex;*/
+	margin-top: -8px;
 }
 
 div.timeGroup p {
