@@ -1,10 +1,16 @@
 // wait until everything on page loads
 document.addEventListener("DOMContentLoaded", function() {
 	
+	raceFile  = window.location.search == '?18M' ? 'data_18M.csv' : 'data.csv';
+
 	// read data files
 	Promise.all([
-		d3.csv('data/data.csv')
+		d3.csv('data/' + raceFile)
 	]).then(function(files){
+
+		if (window.location.search == '?18M') {
+			d3.selectAll('span.race').html('Central Park 18M');
+		}
 
 		csv = files[0];
 
