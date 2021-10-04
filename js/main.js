@@ -88,7 +88,13 @@ document.addEventListener("DOMContentLoaded", function() {
 		hists.append('text')
 			.attr('class', 'subTitle')
 			.attr('y', 49)
-			.html('Bronx pace');
+			.html(function(){
+				if (window.location.search == '?18M') {
+					return '18M pace'
+				} else {
+					return 'Bronx pace'
+				}
+			});
 
 		hists.selectAll('rect')
 			.data( d => d[1])
